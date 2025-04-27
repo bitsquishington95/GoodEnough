@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD ENOUGH™ Market Program</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-background: #F5F5F5;
+            --color-text: #111111;
+            --color-accent: #333333;
+            --color-border: #DDDDDD;
+            --color-button: #111111;
+            --color-button-text: #FFFFFF;
+            --font-main: 'Inter', sans-serif;
+            --spacing-unit: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+        
+        section {
+            padding: calc(var(--spacing-unit) * 12) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: calc(var(--spacing-unit) * 4);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: calc(var(--spacing-unit) * 3);
+        }
+        
+        p {
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            max-width: 42rem;
+        }
+        
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background-image: url('placeholder-booth.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(245, 245, 245, 0.7);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+            background-color: var(--color-button);
+            color: var(--color-button-text);
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            margin-top: calc(var(--spacing-unit) * 3);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--color-accent);
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: calc(var(--spacing-unit) * 6);
+        }
+        
+        .step {
+            flex: 0 0 30%;
+            margin-bottom: calc(var(--spacing-unit) * 4);
+        }
+        
+        .step h3 {
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: calc(var(--spacing-unit) * 4) 0;
+        }
+        
+        table th, table td {
+            padding: calc(var(--spacing-unit) * 2);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        table th {
+            font-weight: 500;
+        }
+        
+        .toolkit {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: calc(var(--spacing-unit) * 4);
+            margin-top: calc(var(--spacing-unit) * 6);
+        }
+        
+        .toolkit-item h3 {
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+        
+        .toolkit-item ul {
+            list-style: none;
+        }
+        
+        .toolkit-item li {
+            margin-bottom: calc(var(--spacing-unit) * 1);
+            padding-left: calc(var(--spacing-unit) * 2);
+            position: relative;
+        }
+        
+        .toolkit-item li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+        }
+        
+        .ideal-partner ul {
+            list-style: none;
+            margin-top: calc(var(--spacing-unit) * 4);
+        }
+        
+        .ideal-partner li {
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            padding-left: calc(var(--spacing-unit) * 2);
+            position: relative;
+        }
+        
+        .ideal-partner li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+        }
+        
+        .application-form {
+            max-width: 600px;
+            margin: calc(var(--spacing-unit) * 6) auto 0;
+        }
+        
+        .form-group {
+            margin-bottom: calc(var(--spacing-unit) * 3);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: calc(var(--spacing-unit) * 1);
+            font-weight: 400;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: calc(var(--spacing-unit) * 1.5);
+            border: 1px solid var(--color-border);
+            background-color: #FFFFFF;
+            font-family: var(--font-main);
+            font-size: 16px;
+        }
+        
+        textarea {
+            min-height: 120px;
+        }
+        
+        .thank-you {
+            display: none;
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 8) 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 6) 0;
+        }
+        
+        .footer-links {
+            margin: calc(var(--spacing-unit) * 3) 0;
+        }
+        
+        .footer-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            margin: 0 calc(var(--spacing-unit) * 2);
+        }
+        
+        .copyright {
+            font-size: 0.875rem;
+            margin-top: calc(var(--spacing-unit) * 3);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+            }
+            
+            .step {
+                flex: 0 0 100%;
+            }
+            
+            .toolkit {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>JOIN THE GOOD ENOUGH™<br>MARKET COLLECTIVE</h1>
+            <p>Premium streetwear micro-booths for select farmers markets.</p>
+            <a href="#apply" class="btn">APPLY NOW</a>
+        </div>
+    </section>
+    
+    <!-- Value Proposition -->
+    <section>
+        <div class="container">
+            <h2>MARKET PROGRAM</h2>
+            <p>GOOD ENOUGH™ is seeking select partners to operate branded micro-booths at premium farmers markets in key cities. This is not a mass franchise opportunity — we're building a limited collective of independent operators who embody our brand values and regional authenticity.</p>
+            <p>Our Market Program combines the heritage of local markets with authenticated premium streetwear, creating a unique retail model that resonates with today's conscious consumers.</p>
+            <p><em>Each partner receives exclusive territory rights, regional product capsules, and a turnkey system for success.</em></p>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section>
+        <div class="container">
+            <h2>THE PROCESS</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3>1. SELECT</h3>
+                    <p>We carefully select partners with strong local market connections, retail experience, and alignment with our aesthetic and values.</p>
+                </div>
+                <div class="step">
+                    <h3>2. EQUIP</h3>
+                    <p>Partners receive complete booth designs, product allocation, NFC authentication technology, and comprehensive training.</p>
+                </div>
+                <div class="step">
+                    <h3>3. ACTIVATE</h3>
+                    <p>Launch your GOOD ENOUGH™ micro-booth with regional-specific product capsules that tell authentic local stories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ROI & Numbers -->
+    <section>
+        <div class="container">
+            <h2>PARTNER ECONOMICS</h2>
+            <table>
+                <tr>
+                    <th>Investment Component</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Initial Investment</td>
+                    <td>$18,500 - $22,000</td>
+                </tr>
+                <tr>
+                    <td>Ongoing Fee Structure</td>
+                    <td>8% of net sales</td>
+                </tr>
+                <tr>
+                    <td>Territory Protection</td>
+                    <td>25-mile exclusivity radius</td>
+                </tr>
+                <tr>
+                    <td>Projected Revenue</td>
+                    <td>$5,000 - $8,000 per market day*</td>
+                </tr>
+                <tr>
+                    <td>Projected Margin</td>
+                    <td>35-40% (after all fees)</td>
+                </tr>
+                <tr>
+                    <td>Projected Payback Period</td>
+                    <td>4-6 months of weekend operations</td>
+                </tr>
+            </table>
+            <p><small>*Based on performance data from pilot markets. Individual results may vary.</small></p>
+        </div>
+    </section>
+    
+    <!-- What's Included -->
+    <section>
+        <div class="container">
+            <h2>THE TOOLKIT</h2>
+            <p>As a GOOD ENOUGH™ Market Partner, you'll receive:</p>
+            <div class="toolkit">
+                <div class="toolkit-item">
+                    <h3>PHYSICAL ASSETS</h3>
+                    <ul>
+                        <li>Premium 10'x10' booth system with modular components</li>
+                        <li>Museum-quality product display fixtures</li>
+                        <li>Complete branded environment package</li>
+                        <li>NFC authentication hardware</li>
+                    </ul>
+                </div>
+                <div class="toolkit-item">
+                    <h3>DIGITAL TOOLS</h3>
+                    <ul>
+                        <li>Inventory management system</li>
+                        <li>Transaction processing platform</li>
+                        <li>Customer data capture tools</li>
+                        <li>Performance analytics dashboard</li>
+                    </ul>
+                </div>
+                <div class="toolkit-item">
+                    <h3>PRODUCT & OPERATIONS</h3>
+                    <ul>
+                        <li>Exclusive regional product capsules</li>
+                        <li>Premium packaging & materials</li>
+                        <li>Comprehensive operations manual</li>
+                        <li>Ongoing training & support</li>
+                    </ul>
+                </div>
+                <div class="toolkit-item">
+                    <h3>TERRITORY & RIGHTS</h3>
+                    <ul>
+                        <li>Exclusive geographic rights</li>
+                        <li>Regional storytelling framework</li>
+                        <li>Local capsule input privileges</li>
+                        <li>First right to additional territories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ideal Partner -->
+    <section class="ideal-partner">
+        <div class="container">
+            <h2>WHO WE'RE LOOKING FOR</h2>
+            <p>The ideal GOOD ENOUGH™ Market Partner:</p>
+            <ul>
+                <li>Has established relationships with premium farmers markets</li>
+                <li>Understands both streetwear culture and local market dynamics</li>
+                <li>Appreciates minimal aesthetic and premium positioning</li>
+                <li>Is personally connected to their region's authentic story</li>
+                <li>Values quality execution over rapid expansion</li>
+                <li>Approaches retail as both commerce and community</li>
+            </ul>
+            <p><em>We are not seeking conventional franchisees or pure investors. This program is designed for hands-on operators who will personally manage their market presence.</em></p>
+        </div>
+    </section>
+    
+    <!-- Application Form -->
+    <section id="apply">
+        <div class="container">
+            <h2>BECOME A MARKET PARTNER</h2>
+            <form id="application-form" class="application-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="region">City/Region</label>
+                    <input type="text" id="region" name="region" required>
+                </div>
+                <div class="form-group">
+                    <label for="marketConnections">Current Market Connections</label>
+                    <textarea id="marketConnections" name="marketConnections" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="retailExperience">Retail/Brand Experience</label>
+                    <textarea id="retailExperience" name="retailExperience" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Why you're interested in GOOD ENOUGH™</label>
+                    <textarea id="interest" name="interest" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="links">Links to your social or portfolio (optional)</label>
+                    <input type="text" id="links" name="links">
+                </div>
+                <div class="form-group">
+                    <label for="referral">How you heard about us</label>
+                    <input type="text" id="referral" name="referral" required>
+                </div>
+                <button type="submit" class="btn">SUBMIT APPLICATION</button>
+            </form>
+            
+            <div id="thank-you" class="thank-you">
+                <h2>THANK YOU FOR YOUR INTEREST</h2>
+                <p>Your application has been received. Due to our selective approach and limited territories, we review all applications carefully. If your experience and vision align with our current needs, a team member will contact you within 7-10 business days.</p>
+                <p><em>— The GOOD ENOUGH Team</em></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>GOOD ENOUGH™</strong><br><em>Est. 2025</em></p>
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">© 2025 GOOD ENOUGH™ LLC. All Rights Reserved.<br><em>GOOD ENOUGH™ is a registered trademark</em></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple form submission handling
+        document.getElementById('application-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real implementation, you would send the form data to your server
+            // For demo purposes, we'll just show the thank you message
+            document.getElementById('application-form').style.display = 'none';
+            document.getElementById('thank-you').style.display = 'block';
+            
+            // Scroll to thank you message
+            document.getElementById('thank-you').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 
