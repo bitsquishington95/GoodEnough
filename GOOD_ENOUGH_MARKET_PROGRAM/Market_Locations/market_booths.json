@@ -1,0 +1,32 @@
+[
+  {
+    "market_id": "chi-westloop-001",
+    "city": "Chicago",
+    "location": "West Loop Farmers Market",
+    "owner_name": "Jordan Smith",
+    "open_date": "2025-08-15",
+    "capsule_ids": ["capsule_chi_fall25"],
+    "inventory_status": "active",
+    "nfc_tracking_enabled": true
+  },
+  {
+    "market_id": "den-downtown-001",
+    "city": "Denver",
+    "location": "Denver Union Station Farmers Market",
+    "owner_name": "Maya Rodriguez",
+    "open_date": "2025-09-05",
+    "capsule_ids": ["capsule_den_fall25"],
+    "inventory_status": "pending",
+    "nfc_tracking_enabled": true
+  },
+  {
+    "market_id": "aus-eastside-001",
+    "city": "Austin",
+    "location": "East Austin Farmers Market",
+    "owner_name": "Diana Martinez",
+    "open_date": "2025-09-01",
+    "capsule_ids": ["capsule_aus_fall25"],
+    "inventory_status": "pending",
+    "nfc_tracking_enabled": true
+  }
+] 

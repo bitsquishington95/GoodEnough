@@ -1,0 +1,20 @@
+[
+  {
+    "id": "capsule_001",
+    "name": "Waxed Chore Coat",
+    "season": "Fall 2025",
+    "retail_price": 320,
+    "MOQ": 100,
+    "fabric": "12oz Waxed Cotton, U.S. Sourced",
+    "special_notes": "Hidden skull embroidery on left sleeve hem"
+  },
+  {
+    "id": "capsule_002",
+    "name": "Slub Tee Collab",
+    "season": "Spring 2026",
+    "retail_price": 60,
+    "MOQ": 200,
+    "fabric": "Heavyweight slub cotton",
+    "special_notes": "Limited graffiti artist signature series"
+  }
+] 

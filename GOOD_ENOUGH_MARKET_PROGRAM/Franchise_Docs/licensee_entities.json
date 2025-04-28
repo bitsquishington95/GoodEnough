@@ -1,0 +1,38 @@
+[
+  {
+    "licensee_id": "licensee_chi001",
+    "name": "Jordan Smith",
+    "market": "West Loop Farmers Market",
+    "city": "Chicago",
+    "state": "IL",
+    "start_date": "2025-08-01",
+    "status": "active",
+    "capsules_access": ["capsule_chi_fall25"],
+    "compliance_check_passed": true,
+    "training_completed": true
+  },
+  {
+    "licensee_id": "licensee_den001",
+    "name": "Maya Rodriguez",
+    "market": "Denver Union Station Farmers Market",
+    "city": "Denver",
+    "state": "CO",
+    "start_date": "2025-09-01",
+    "status": "pending",
+    "capsules_access": ["capsule_den_fall25"],
+    "compliance_check_passed": false,
+    "training_completed": false
+  },
+  {
+    "licensee_id": "licensee_aus001",
+    "name": "Diana Martinez",
+    "market": "East Austin Farmers Market",
+    "city": "Austin",
+    "state": "TX",
+    "start_date": "2025-09-01",
+    "status": "pending",
+    "capsules_access": ["capsule_aus_fall25"],
+    "compliance_check_passed": true,
+    "training_completed": false
+  }
+] 

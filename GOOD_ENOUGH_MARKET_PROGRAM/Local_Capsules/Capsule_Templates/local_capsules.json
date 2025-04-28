@@ -1,0 +1,53 @@
+[
+  {
+    "capsule_id": "capsule_chi_fall25",
+    "region": "Chicago",
+    "season": "Fall 2025",
+    "products": [
+      {
+        "name": "14oz Heavy Tee",
+        "colorway": "Lake Effect Grey"
+      },
+      {
+        "name": "Waxed Chore Coat",
+        "colorway": "South Loop Sand"
+      }
+    ],
+    "special_notes": "Limited to 250 units, farmers market exclusive",
+    "story_card": "Chicago. Where steel meets lake. Grey from the morning fog that rolls off Michigan. Not trying too hard. good enough."
+  },
+  {
+    "capsule_id": "capsule_den_fall25",
+    "region": "Denver",
+    "season": "Fall 2025",
+    "products": [
+      {
+        "name": "14oz Heavy Tee",
+        "colorway": "Rockies Slate"
+      },
+      {
+        "name": "Canvas Tote",
+        "colorway": "Alpine Timber"
+      }
+    ],
+    "special_notes": "Limited to 200 units, features local artist tag",
+    "story_card": "Denver. Where mountain meets sky. Slate from the rocky faces that watch over the city. Quiet confidence. good enough."
+  },
+  {
+    "capsule_id": "capsule_aus_fall25",
+    "region": "Austin",
+    "season": "Fall 2025",
+    "products": [
+      {
+        "name": "14oz Heavy Tee",
+        "colorway": "Desert Clay"
+      },
+      {
+        "name": "Crew Sock",
+        "colorway": "Texas Night"
+      }
+    ],
+    "special_notes": "Limited to 200 units, features East Austin market exclusive",
+    "story_card": "Austin. Where creativity thrives in the heat. Clay red from the earth itself. Standing out without shouting. good enough."
+  }
+] 

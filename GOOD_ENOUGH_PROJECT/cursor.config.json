@@ -1,0 +1,22 @@
+{
+  "name": "good-enough-project",
+  "description": "Complete brand and operational build-out for GOOD ENOUGH luxury streetwear",
+  "folders": [
+    "Research_Library",
+    "Product_Development",
+    "Marketing_Campaigns",
+    "Press_and_PR",
+    "Sales_and_Distribution",
+    "Customer_Community",
+    "Org_Ops"
+  ],
+  "tags": [
+    "luxury",
+    "streetwear",
+    "brand launch",
+    "ecommerce",
+    "DTC",
+    "cursor"
+  ],
+  "default_branch": "main"
+} 
