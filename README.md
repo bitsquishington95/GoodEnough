@@ -1,42 +1,57 @@
-# GOOD ENOUGH™
+# GOOD ENOUGH™ Project
 
-A luxury anti-luxury streetwear brand with a franchise market program and digital authentication.
+A comprehensive brand strategy and implementation framework for GOOD ENOUGH™, focusing on quiet luxury, cultural membership, and experiential retail.
 
 ## Project Structure
 
-This repository contains two main components:
+### Documentation
+- `docs/brand/` - Brand guidelines, DNA, and visual identity
+- `docs/operations/` - Booth activation, market systems, and operational procedures
+- `docs/marketing/` - Marketing strategies and activation plans
+- `docs/community/` - Community building and engagement strategies
 
-### 1. GOOD ENOUGH Market Program
+### Research Library
+- `GOOD_ENOUGH_PROJECT/Research_Library/` - Comprehensive research and analysis
+  - Brand Inspiration
+  - Competitive Analysis
+  - Consumer Insights
+  - Cultural Models
+  - Emerging Trends
+  - Foundational Studies
+  - Market Research
+  - Market Resources
+  - Product Strategy
+  - Retail Analytics
 
-A complete framework for operating branded micro-booths at farmers markets across North America, offering local-capsule apparel with regional character.
+### Strategic Planning
+- `GOOD_ENOUGH_PROJECT/Strategic_Planning/` - Long-term strategy and planning documents
 
-- **Booth Designs**: Specifications for 10x10 and 20x10 market booths
-- **Franchise Documents**: License model, pricing, and territory rights
-- **Brand Assets**: Story card templates, NFC authentication flow
-- **Market Research**: Premium product selling strategies
-- **Operations Manual**: Staff training guides and protocols
+## Key Documents
 
-### 2. GOOD ENOUGH Scaffold
+### Brand
+- `brand_playbook.md` - Complete brand guidelines and DNA
 
-A technical implementation roadmap organized into seven key focus areas:
+### Operations
+- `market_activation_system.md` - Booth activation and market system
+- `booth_activation.md` - Detailed booth setup and operations
 
-- **Digital Infrastructure**: NFC authentication backend, Shopify integration
-- **Financial Models**: Licensee P&L templates, wholesale pricing
-- **Product Development**: Tech packs, manufacturing standards
-- **Marketing Support**: Social media playbooks, PR materials
-- **Legal Framework**: Franchise agreements, IP strategy
-- **Operations Tools**: Inventory systems, fulfillment processes
-- **Community Building**: Cross-regional events, collector platforms
+### Marketing
+- `celebrity_activation.md` - Celebrity and influencer engagement strategy
+
+### Community
+- `community_plan.md` - Community building and engagement framework
 
 ## Getting Started
 
-The implementation follows a phased approach:
+1. Review the brand playbook for core principles
+2. Study the market activation system for implementation
+3. Follow the community plan for engagement
+4. Reference research library for insights
 
-1. **Phase 1** (Weeks 1-4): Digital Infrastructure · Financial Models
-2. **Phase 2** (Weeks 3-8): Product Development · Legal Framework
-3. **Phase 3** (Weeks 6-10): Marketing Support · Operational Tools
-4. **Phase 4** (Week 10+): Community Building (ongoing)
+## Contributing
 
-For detailed documentation, see the README files in each project folder:
-- [Market Program README](GOOD_ENOUGH_MARKET_PROGRAM/README.md)
-- [Implementation Scaffold README](GOOD_ENOUGH_SCAFFOLD/README.md) 
+Please follow the established documentation structure when adding new files or making changes. All documentation should maintain the brand's voice and tone of quiet excellence.
+
+## License
+
+All rights reserved. GOOD ENOUGH™ 
